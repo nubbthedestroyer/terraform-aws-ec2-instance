@@ -4,6 +4,7 @@ terraform {
 
 provider "aws" {
   region = "${var.aws_region}"
+  profile = "${var.aws_profile}"
 }
 
 resource "aws_instance" "ubuntu" {
@@ -15,6 +16,6 @@ resource "aws_instance" "ubuntu" {
     Name        = "${var.name}"
     TTL         = "${var.ttl}"
     Owner       = "${var.owner}"
-    Description = "This is a tremendous description"
+    Description = "This is a tremendous Hulu description"
   }
 }
