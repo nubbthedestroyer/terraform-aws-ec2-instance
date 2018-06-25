@@ -14,8 +14,8 @@ resource "aws_instance" "ubuntu" {
 
   tags {
     Name        = "${var.name}"
-    ttl         = "${var.ttl}"
-    owner       = "${var.owner}"
+    TTL         = "${var.ttl}"
+    Owner       = "${var.owner}"
     Description = "This is a tremendous Hulu description"
   }
 }
